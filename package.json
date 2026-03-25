@@ -1,6 +1,6 @@
 {
   "name": "visa-info-mcp",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "MCP server providing visa requirements, processing times, and documents for Indian passport holders. Data sourced from timesofvisa.com.",
   "type": "module",
   "main": "dist/index.js",
@@ -17,6 +17,7 @@
   "author": "Times of Visa <noreply@timesofvisa.com>",
   "license": "MIT",
   "homepage": "https://www.timesofvisa.com",
+  "mcpName": "io.github.rajat79suri/visa-info",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
     "zod": "^3.0.0"

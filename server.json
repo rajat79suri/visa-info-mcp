@@ -1,0 +1,20 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.rajat79suri/visa-info",
+  "description": "Visa requirements, processing times, document checklists, and FAQs for Indian passport holders across 35 countries. All data sourced from timesofvisa.com.",
+  "repository": {
+    "url": "https://github.com/rajat79suri/visa-info-mcp",
+    "source": "github"
+  },
+  "version": "1.0.2",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "visa-info-mcp",
+      "version": "1.0.2",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
