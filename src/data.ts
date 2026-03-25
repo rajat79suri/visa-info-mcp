@@ -4,9 +4,20 @@ import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
+// UTM tracking for MCP-driven traffic
+const UTM = '?utm_source=mcp&utm_medium=claude&utm_campaign=visa-info';
+
 // Load generated data from ToV sync script
 const dataPath = join(__dirname, '..', 'data', 'visas.json');
-const raw = JSON.parse(readFileSync(dataPath, 'utf-8'));
+const rawData = JSON.parse(readFileSync(dataPath, 'utf-8'));
+
+// Append UTM params to all source and guide URLs
+for (const country of Object.values(rawData) as any[]) {
+  if (country.sourceUrl) country.sourceUrl = country.sourceUrl + UTM;
+  if (country.guideUrl) country.guideUrl = country.guideUrl + UTM;
+}
+
+const raw = rawData;
 
 export interface VisaCountry {
   country: string;
