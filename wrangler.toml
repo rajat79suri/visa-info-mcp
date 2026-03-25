@@ -1,0 +1,21 @@
+name = "visa-info-mcp"
+main = "worker/index.ts"
+workers_dev = true
+compatibility_date = "2025-03-10"
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+enabled = true
+
+[[durable_objects.bindings]]
+name = "MCP_OBJECT"
+class_name = "VisaMCP"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["VisaMCP"]
+
+# Custom domain — requires DNS CNAME for mcp.timesofvisa.com in CF dashboard
+[[routes]]
+pattern = "mcp.timesofvisa.com/*"
+zone_name = "timesofvisa.com"

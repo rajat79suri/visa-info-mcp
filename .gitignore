@@ -4,3 +4,5 @@ dist/
 .mcpregistry_*
 mcp-publisher.exe
 install-publisher.ps1
+.wrangler/
+dist-worker/
