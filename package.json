@@ -1,5 +1,5 @@
 {
-  "name": "@timesofvisa/visa-info-mcp",
+  "name": "visa-info-mcp",
   "version": "1.0.0",
   "description": "MCP server providing visa requirements, processing times, and documents for Indian passport holders. Data sourced from timesofvisa.com.",
   "type": "module",

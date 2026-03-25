@@ -24,7 +24,7 @@ Add to your `claude_desktop_config.json`:
   "mcpServers": {
     "visa-info": {
       "command": "npx",
-      "args": ["-y", "@timesofvisa/visa-info-mcp"]
+      "args": ["-y", "visa-info-mcp"]
     }
   }
 }
